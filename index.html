@@ -88,7 +88,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- Product Data and Functionality -->
     <script>
-        // Product data from your CSV, with sale prices
+        // Product data, including Printify product
         const products = [
             {
                 handle: "graphic-t-shirt",
@@ -102,23 +102,12 @@
                 ]
             },
             {
-                handle: "wireless-earbuds",
-                title: "Wireless Earbuds",
-                description: "High-quality wireless earbuds with noise cancellation.",
-                vendor: "TechTrendz",
+                handle: "printify-custom-tee",
+                title: "Custom T-Shirt", // Replace with your actual Printify product title
+                description: "Your custom-designed tee from Printify.", // Replace with actual description
+                vendor: "Printify",
                 variants: [
-                    { color: "Black", sku: "WE-BK-001", originalPrice: 59.99, salePrice: 49.99, image: "/images/earbuds-black.jpg" },
-                    { color: "White", sku: "WE-WH-002", originalPrice: 59.99, salePrice: 49.99, image: "/images/earbuds-white.jpg" }
-                ]
-            },
-            {
-                handle: "reusable-water-bottle",
-                title: "Reusable Water Bottle",
-                description: "Eco-friendly stainless steel water bottle.",
-                vendor: "EcoLiving",
-                variants: [
-                    { size: "500ml", sku: "WB-500-001", originalPrice: 24.99, salePrice: 19.99, image: "/images/bottle-500ml.jpg" },
-                    { size: "750ml", sku: "WB-750-002", originalPrice: 29.99, salePrice: 24.99, image: "/images/bottle-750ml.jpg" }
+                    { size: "Medium", sku: "PRINT-001", originalPrice: 30.00, salePrice: 25.00, image: "https://printify.com/image.jpg" } // Replace image URL with actual from API
                 ]
             }
         ];
@@ -146,7 +135,7 @@
 
         // Simulated Buy Now function
         function buyNow(title, variant, price) {
-            alert(`Thank you for your interest!\n\nProduct: ${title}\nVariant: ${variant}\nPrice: $${price}\n\nThis is a demo - no real checkout yet!`);
+            alert(`Thank you for your interest!\n\nProduct: ${title}\nVariant: ${variant}\nPrice: $${price}\n\nThis is a demo - order will be placed via Printify manually!`);
         }
 
         // Load products on page load
