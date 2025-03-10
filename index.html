@@ -84,21 +84,6 @@
             font-size: 1.1rem;
             margin-left: 10px;
         }
-        .buy-btn {
-            background: #8b5e3c;
-            color: #fff;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background 0.3s ease, transform 0.2s ease;
-            width: 100%;
-        }
-        .buy-btn:hover {
-            background: #6b4a2e;
-            transform: scale(1.05);
-        }
         .footer {
             background: #4a3c31;
             color: #fff;
@@ -172,10 +157,11 @@
                 </select>
                 <p><span id="sale-price" class="sale-price">$${product.variants[0].salePrice}</span> <span id="original-price" class="original-price">$${product.variants[0].originalPrice}</span></p>
                 <p>Vendor: ${product.vendor}</p>
-                <button class="buy-btn" onclick="buyNow()">Buy Now</button>
+                <div id="helioCheckoutContainer"></div>
             `;
             display.appendChild(card);
 
+            // Set default values for size and color
             document.getElementById("size-select").value = "L";
             document.getElementById("color-select").value = "Moss";
             updateVariant();
@@ -190,18 +176,25 @@
             document.getElementById("original-price").textContent = `$${variant.originalPrice}`;
         }
 
-        function buyNow() {
-            const size = document.getElementById("size-select").value;
-            const color = document.getElementById("color-select").value;
-            const variant = product.variants.find(v => v.size === size && v.color === color) || product.variants[0];
-            alert(`Thank you!\n\nProduct: ${product.title}\nSize: ${size}\nColor: ${color}\nPrice: $${variant.salePrice}\n\nDemo - order via Printify!`);
-        }
-
         document.addEventListener("DOMContentLoaded", () => {
             renderProduct();
             document.getElementById("size-select").addEventListener("change", updateVariant);
             document.getElementById("color-select").addEventListener("change", updateVariant);
         });
+    </script>
+
+    <!-- Helio Widget Script -->
+    <script type="module" crossorigin src="https://embed.hel.io/assets/index-v1.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        window.helioCheckout(
+          document.getElementById("helioCheckoutContainer"),
+          {
+            paylinkId: "67cea63e102a8033ad702fce",
+            theme: {"themeMode":"light"}
+          }
+        );
+      });
     </script>
 </body>
 </html>
