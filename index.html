@@ -75,14 +75,8 @@
         }
         .sale-price {
             font-weight: bold;
-            color: #d9534f;
+            color: #4a3c31;
             font-size: 1.5rem;
-        }
-        .original-price {
-            text-decoration: line-through;
-            color: #8c7a6b;
-            font-size: 1.1rem;
-            margin-left: 10px;
         }
         .footer {
             background: #4a3c31;
@@ -116,28 +110,29 @@
     <!-- Product Data and Functionality -->
     <script>
         const product = {
-    handle: "67ccf35f8f16ad84450c145b",
-    title: "Vintage Rooster Graphic Unisex T-Shirt",
-    vendor: "Printify",
-    variants: [
-        { id: "79023", size: "L", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "73199", size: "S", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "73203", size: "M", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "73207", size: "L", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "73211", size: "XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "73215", size: "2XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "79169", size: "3XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "101476", size: "4XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "79021", size: "S", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "79022", size: "M", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "79024", size: "XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "79025", size: "2XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "79149", size: "3XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "101457", size: "4XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
-        { id: "73196", size: "S", color: "Black", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: false },
-        { id: "3348", size: "M", color: "Melon", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: false }
-    ]
-};
+            handle: "67ccf35f8f16ad84450c145b",
+            title: "Vintage Rooster Graphic Unisex T-Shirt",
+            vendor: "Printify",
+            variants: [
+                { id: "79023", size: "L", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "73199", size: "S", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "73203", size: "M", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "73207", size: "L", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "73211", size: "XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "73215", size: "2XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "79169", size: "3XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "101476", size: "4XL", color: "White", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "79021", size: "S", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "79022", size: "M", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "79024", size: "XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "79025", size: "2XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "79149", size: "3XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "101457", size: "4XL", color: "Moss", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: true },
+                { id: "73196", size: "S", color: "Black", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/73207/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: false },
+                { id: "3348", size: "M", color: "Melon", price: 25.00, image: "https://images-api.printify.com/mockup/67ccf35f8f16ad84450c145b/79023/98445/vintage-rooster-graphic-unisex-t-shirt-farmhouse-chic-apparel.jpg?camera_label=front", enabled: false }
+            ]
+        };
+
         const sizes = ["S", "M", "L", "XL", "2XL", "3XL", "4XL"];
         const colors = [...new Set(product.variants.map(v => v.color))];
 
@@ -154,7 +149,7 @@
                 <select id="color-select" class="variant-select">
                     ${colors.map(color => `<option value="${color}">${color}</option>`).join('')}
                 </select>
-                <p><span id="sale-price" class="sale-price">$${product.variants[0].salePrice}</span> <span id="original-price" class="original-price">$${product.variants[0].originalPrice}</span></p>
+                <p><span id="price" class="sale-price">$${product.variants[0].price.toFixed(2)}</span></p>
                 <p>Vendor: ${product.vendor}</p>
                 <div id="helioCheckoutContainer"></div>
             `;
@@ -171,8 +166,7 @@
             const color = document.getElementById("color-select").value;
             const variant = product.variants.find(v => v.size === size && v.color === color) || product.variants[0];
             document.getElementById("product-image").src = variant.image;
-            document.getElementById("sale-price").textContent = `$${variant.salePrice}`;
-            document.getElementById("original-price").textContent = `$${variant.originalPrice}`;
+            document.getElementById("price").textContent = `$${variant.price.toFixed(2)}`;
         }
 
         document.addEventListener("DOMContentLoaded", () => {
